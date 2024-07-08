@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title_txt">Survey Form</h1>
+        <p class="content_text">Feel free to answer the questions based on your experience and opinion, If you're not convinient in answering a question then please skip it by answering No.</p>
+        <div class="form-container">
+            <form action="#" method="post" class="form-left">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Your Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Overall Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select...</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>How would you rate your coding proficiency?</label><br>
+                    <input type="radio" id="beginner" name="proficiency" value="Beginner">
+                    <label for="beginner">Beginner</label><br>
+        
+                    <input type="radio" id="intermediate" name="proficiency" value="Intermediate">
+                    <label for="intermediate">Intermediate</label><br>
+        
+                    <input type="radio" id="advanced" name="proficiency" value="Advanced">
+                    <label for="advanced">Advanced</label><br>
+                </div>
+            </form>
+            <form action="#" method="post" class="form-right">
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="frequency">How often do you code?</label>
+                    <select id="frequency" name="frequency">
+                        <option value="">Select...</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="improvements">Suggestions for Improvements:</label>
+                    <textarea id="improvements" name="improvements" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
